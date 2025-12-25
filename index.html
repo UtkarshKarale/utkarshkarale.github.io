@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #8b5cf6;
+            --primary-dark: #7c3aed;
+            --secondary: #ec4899;
+            --accent: #06b6d4;
+            --text: #f9fafb;
+            --text-dark: #1f2937;
+            --text-light: #9ca3af;
+            --bg: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #1e293b;
+            --border: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0.05;
+            z-index: -1;
+        }
+
+        .gradient-bg {
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            animation: rotate 20s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        nav {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            display: none;
+            padding: 3rem 0;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient 3s ease infinite;
+            background-size: 200% 200%;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text);
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card p {
+            color: var(--text-light);
+            margin: 0.5rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-meta {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .blog-post pre {
+            background: var(--bg);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border: 1px solid var(--border);
+        }
+
+        .blog-post code {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+
+        .blog-post a {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 2px solid var(--primary);
+            transition: all 0.3s;
+        }
+
+        .blog-post a:hover {
+            color: var(--secondary);
+            border-color: var(--secondary);
+        }
+
+        .back-btn {
+            margin-bottom: 2rem;
+        }
+
+        .upload-area {
+            border: 2px dashed var(--border);
+            border-radius: 1rem;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: var(--bg-card);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .upload-area::before {
+            content: '📤';
+            font-size: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            transition: all 0.3s;
+        }
+
+        .upload-area:hover::before {
+            opacity: 0.2;
+            font-size: 4rem;
+        }
+
+        .upload-area:hover {
+            border-color: var(--primary);
+            background: rgba(139, 92, 246, 0.05);
+            transform: scale(1.02);
+        }
+
+        .upload-area.dragover {
+            border-color: var(--secondary);
+            background: rgba(236, 72, 153, 0.1);
+            transform: scale(1.05);
+        }
+
+        .upload-area p {
+            position: relative;
+            z-index: 1;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .resource-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .resource-item:hover {
+            transform: translateX(10px);
+            border-color: var(--primary);
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.2);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+            box-shadow: 0 2px 10px rgba(139, 92, 246, 0.3);
+        }
+
+        /* Floating particles */
+        .particle {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: var(--primary);
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0.3;
+            animation: float 15s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-100px) translateX(50px); }
+            50% { transform: translateY(-200px) translateX(-50px); }
+            75% { transform: translateY(-100px) translateX(100px); }
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 50px;
+            border: 2px solid var(--primary);
+            border-radius: 25px;
+            opacity: 0.6;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: scroll 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        @keyframes scroll {
+            0% { opacity: 1; top: 10px; }
+            100% { opacity: 0; top: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-post {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-bg"></div>
+
+    <nav>
+        <div class="container">
+            <div class="logo">✨ Portfolio</div>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#blog" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#learning" onclick="showSection('learning')">Learning</a></li>
+                <li><a href="#resources" onclick="showSection('resources')">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <div class="hero">
+                <h1>Hi, I'm a Creator 👋</h1>
+                <p class="subtitle">Developer • Designer • Problem Solver</p>
+                <p>Building amazing digital experiences, one line of code at a time</p>
+                <a href="#projects" onclick="showSection('projects')" class="btn">Explore My Work</a>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="grid" id="projects-grid">
+                <div class="card">
+                    <h3>🚀 Project One</h3>
+                    <p>A cutting-edge full-stack web application built with modern technologies, featuring real-time updates and seamless user experience.</p>
+                    <div class="card-meta">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>🎨 Project Two</h3>
+                    <p>Beautiful mobile-first responsive design showcase with stunning animations and interactive elements.</p>
+                    <div class="card-meta">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GSAP</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>⚡ Project Three</h3>
+                    <p>High-performance API service handling millions of requests with optimal speed and reliability.</p>
+                    <div class="card-meta">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <div id="blog-list">
+                <h2>Latest Blog Posts</h2>
+                <div class="upload-area" id="blog-upload" onclick="document.getElementById('blog-file-input').click()">
+                    <p>📝 Click or drag MDX/Markdown files here to add blog posts</p>
+                    <input type="file" id="blog-file-input" accept=".md,.mdx" multiple style="display: none;">
+                </div>
+                <div class="grid" id="blog-grid"></div>
+            </div>
+            <div id="blog-post" style="display: none;">
+                <button class="btn back-btn" onclick="showBlogList()">← Back to Blog</button>
+                <div class="blog-post" id="blog-content"></div>
+            </div>
+        </section>
+
+        <!-- Learning Section -->
+        <section id="learning">
+            <h2>Learning Journey 📚</h2>
+            <div class="upload-area" id="learning-upload" onclick="document.getElementById('learning-file-input').click()">
+                <p>📚 Click or drag MDX/Markdown files here to add learning notes</p>
+                <input type="file" id="learning-file-input" accept=".md,.mdx" multiple style="display: none;">
+            </div>
+            <div class="grid" id="learning-grid"></div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2>Curated Resources 🔗</h2>
+            <div class="upload-area" id="resources-upload" onclick="document.getElementById('resources-file-input').click()">
+                <p>🔗 Click or drag MDX/Markdown files here to add resources</p>
+                <input type="file" id="resources-file-input" accept=".md,.mdx" multiple style="display: none;">
+            </div>
+            <div id="resources-list"></div>
+        </section>
+    </main>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.width = Math.random() * 5 + 5 + 'px';
+                particle.style.height = particle.style.width;
+                document.body.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // Navigation
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+            
+            if (sectionId === 'blog') {
+                showBlogList();
+            }
+        }
+
+        // Storage
+        let blogPosts = [];
+        let learningPosts = [];
+        let resources = [];
+
+        // MDX/Markdown Parser
+        function parseMDX(content) {
+            return marked.parse(content);
+        }
+
+        function extractMetadata(content) {
+            const metaRegex = /^---\n([\s\S]*?)\n---/;
+            const match = content.match(metaRegex);
+            
+            if (match) {
+                const metaContent = match[1];
+                const meta = {};
+                metaContent.split('\n').forEach(line => {
+                    const [key, ...valueParts] = line.split(':');
+                    if (key && valueParts.length) {
+                        meta[key.trim()] = valueParts.join(':').trim().replace(/['"]/g, '');
+                    }
+                });
+                const contentWithoutMeta = content.replace(metaRegex, '').trim();
+                return { meta, content: contentWithoutMeta };
+            }
+            
+            return { meta: {}, content };
+        }
+
+        // File Upload Handlers
+        function setupFileUpload(inputId, uploadAreaId, handler) {
+            const input = document.getElementById(inputId);
+            const uploadArea = document.getElementById(uploadAreaId);
+
+            input.addEventListener('change', (e) => {
+                handleFiles(e.target.files, handler);
+            });
+
+            uploadArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadArea.classList.add('dragover');
+            });
+
+            uploadArea.addEventListener('dragleave', () => {
+                uploadArea.classList.remove('dragover');
+            });
+
+            uploadArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+                handleFiles(e.dataTransfer.files, handler);
+            });
+        }
+
+        function handleFiles(files, handler) {
+            Array.from(files).forEach(file => {
+                if (file.name.endsWith('.md') || file.name.endsWith('.mdx')) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const content = e.target.result;
+                        handler(content, file.name);
+                    };
+                    reader.readAsText(file);
+                }
+            });
+        }
+
+        // Blog Functions
+        function addBlogPost(content, filename) {
+            const { meta, content: postContent } = extractMetadata(content);
+            const post = {
+                id: Date.now(),
+                title: meta.title || filename.replace(/\.(md|mdx)$/, ''),
+                date: meta.date || new Date().toLocaleDateString(),
+                excerpt: meta.excerpt || postContent.substring(0, 150) + '...',
+                content: postContent,
+                filename
+            };
+            blogPosts.unshift(post);
+            renderBlogList();
+        }
+
+        function renderBlogList() {
+            const grid = document.getElementById('blog-grid');
+            grid.innerHTML = blogPosts.map(post => `
+                <div class="card" onclick="showBlogPost(${post.id})">
+                    <h3>${post.title}</h3>
+                    <p>${post.excerpt}</p>
+                    <div class="card-meta">${post.date}</div>
+                </div>
+            `).join('');
+        }
+
+        function showBlogPost(id) {
+            const post = blogPosts.find(p => p.id === id);
+            if (post) {
+                document.getElementById('blog-list').style.display = 'none';
+                document.getElementById('blog-post').style.display = 'block';
+                document.getElementById('blog-content').innerHTML = `
+                    <h1>${post.title}</h1>
+                    <div class="card-meta">${post.date}</div>
+                    <div style="margin-top: 2rem;">${parseMDX(post.content)}</div>
+                `;
+            }
+        }
+
+        function showBlogList() {
+            document.getElementById('blog-list').style.display = 'block';
+            document.getElementById('blog-post').style.display = 'none';
+        }
+
+        // Learning Functions
+        function addLearningPost(content, filename) {
+            const { meta, content: postContent } = extractMetadata(content);
+            const post = {
+                id: Date.now(),
+                title: meta.title || filename.replace(/\.(md|mdx)$/, ''),
+                category: meta.category || 'General',
+                content: postContent,
+                filename
+            };
+            learningPosts.unshift(post);
+            renderLearningList();
+        }
+
+        function renderLearningList() {
+            const grid = document.getElementById('learning-grid');
+            grid.innerHTML = learningPosts.map(post => `
+                <div class="card">
+                    <h3>${post.title}</h3>
+                    <div class="card-meta">
+                        <span class="tag">${post.category}</span>
+                    </div>
+                    <div style="margin-top: 1rem;">${parseMDX(post.content)}</div>
+                </div>
+            `).join('');
+        }
+
+        // Resources Functions
+        function addResource(content, filename) {
+            const { meta, content: resourceContent } = extractMetadata(content);
+            const resource = {
+                id: Date.now(),
+                title: meta.title || filename.replace(/\.(md|mdx)$/, ''),
+                url: meta.url || '#',
+                category: meta.category || 'General',
+                description: resourceContent,
+                filename
+            };
+            resources.unshift(resource);
+            renderResourcesList();
+        }
+
+        function renderResourcesList() {
+            const list = document.getElementById('resources-list');
+            list.innerHTML = resources.map(resource => `
+                <div class="resource-item">
+                    <div>
+                        <h3 style="margin: 0;">${resource.title}</h3>
+                        <p style="margin: 0.5rem 0; color: var(--text-light);">${parseMDX(resource.description)}</p>
+                        <span class="tag">${resource.category}</span>
+                    </div>
+                    <a href="${resource.url}" target="_blank" class="btn">Visit →</a>
+                </div>
+            `).join('');
+        }
+
+        // Initialize
+        setupFileUpload('blog-file-input', 'blog-upload', addBlogPost);
+        setupFileUpload('learning-file-input', 'learning-upload', addLearningPost);
+        setupFileUpload('resources-file-input', 'resources-upload', addResource);
+
+        // Add sample content
+        addBlogPost(`---
+title: The Future of Web Development 🚀
+date: ${new Date().toLocaleDateString()}
+excerpt: Exploring emerging trends and technologies shaping the future of web development
+---
+
+# The Future of Web Development 🚀
+
+The web development landscape is evolving at an unprecedented pace. Let's dive into the trends that are shaping our digital future.
+
+## Key Technologies to Watch
+
+### 1. WebAssembly
+WebAssembly is revolutionizing browser performance, enabling near-native speed for web applications.
+
+### 2. AI Integration
+Artificial Intelligence is becoming an integral part of modern web applications, from chatbots to personalized experiences.
+
+### 3. Progressive Web Apps
+PWAs continue to bridge the gap between web and native applications, offering offline capabilities and app-like experiences.
+
+## Getting Started
+
+The best time to learn these technologies is now. Start small, build projects, and keep pushing your boundaries!`, 'future-of-web.md');
+
+        addLearningPost(`---
+title: Advanced JavaScript Patterns 🎯
+category: JavaScript
+---
+
+## Design Patterns Every Developer Should Know
+
+### 1. Module Pattern
+The module pattern helps organize code and create private variables.
+
+\`\`\`javascript
+const myModule = (function() {
+  let privateVar = 'I am private';
+  
+  return {
+    publicMethod: function() {
+      console.log(privateVar);
+    }
+  };
+})();
+\`\`\`
+
+### 2. Observer Pattern
+Perfect for event-driven programming and reactive applications.
+
+### 3. Singleton Pattern
+Ensures a class has only one instance throughout the application.`, 'js-patterns.md');
+
+        addResource(`---
+title: MDN Web Docs - The Ultimate Reference
+url: https://developer.mozilla.org
+category: Documentation
+---
+
+The most comprehensive and trusted resource for web technologies. Features detailed documentation, interactive examples, and best practices for HTML, CSS, JavaScript, and web APIs.`, 'mdn.md');
+
+        addResource(`---
+title: GitHub - Where the World Builds Software
+url: https://github.com
+category: Platform
+---
+
+The world's leading platform for version control and collaboration. Host your code, review projects, and contribute to open source.`, 'github.md');
+    </script>
+</body>
+</html>
