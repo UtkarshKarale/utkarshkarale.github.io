@@ -1,7 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#2563eb"/>
-  <rect x="4" y="4" width="10" height="10" rx="2.5" fill="white" opacity="0.9"/>
-  <rect x="18" y="4" width="10" height="10" rx="2.5" fill="white" opacity="0.6"/>
-  <rect x="4" y="18" width="10" height="10" rx="2.5" fill="white" opacity="0.6"/>
-  <rect x="18" y="18" width="10" height="10" rx="2.5" fill="white" opacity="0.9"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Black outer ring -->
+  <circle cx="16" cy="16" r="15" fill="#000"/>
+  <!-- White inner circle -->
+  <circle cx="16" cy="16" r="12" fill="#fff"/>
+  <!-- UK text -->
+  <text
+    x="16"
+    y="20.5"
+    font-family="Inter, Arial, sans-serif"
+    font-size="11"
+    font-weight="900"
+    text-anchor="middle"
+    fill="#000"
+    letter-spacing="-0.5"
+  >UK</text>
 </svg>
