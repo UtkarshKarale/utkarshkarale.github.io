@@ -1,0 +1,45 @@
+# Utkarsh Karale
+
+> Full-Stack Software Engineer and AI Engineer specializing in local-first apps, AI desktop tooling, web performance, and developer tools.
+
+- Name: Utkarsh Karale
+- Role: Full-Stack Developer & AI Engineer
+- Website: https://utkarshkarale.github.io/
+- GitHub: https://github.com/UtkarshKarale
+- LinkedIn: https://www.linkedin.com/in/utkarshkarale
+- Email: karaleutkarsh3696@gmail.com
+- Contact Form: https://tally.so/r/xVrYkE
+
+## Core Products & Software
+
+- [FlowRupee](https://utkarshkarale.github.io/projects/flowrupee): 100% offline, privacy-first automated personal finance & SMS expense tracker app for India. Published on Google Play Store. Zero bank logins, zero cloud storage.
+- [StatusGrid](https://utkarshkarale.github.io/projects/statusgrid): High-performance festival greeting and poster creator PWA for Indian festivals (Diwali, Gudi Padwa, Shiv Jayanti) in Marathi, Hindi & English with custom photos, branding, and 1-tap WhatsApp sharing.
+- [LeadPluck](https://utkarshkarale.github.io/leadpluck): Local-first Google Maps and business website lead extractor Chrome extension. Automates contact collection without cloud servers.
+- [WebStickly](https://utkarshkarale.github.io/webstickly): Web annotation and pinned note extension with spotlight search, collaborative public note walls, and persistent URL anchors.
+- [CleanUpload](https://utkarshkarale.github.io/projects/cleanupload): 100% client-side privacy tool to strip EXIF, GPS coordinates, and generative AI provenance metadata from images before publishing.
+- [Monitoro](https://utkarshkarale.github.io/projects/monitoro): Telegram-based uptime monitoring service providing real-time website and server incident alerts.
+- [Daymark](https://utkarshkarale.github.io/daymark): Minimal daily progress tracking and habit reflection workspace.
+- [SuddhaInbox](https://utkarshkarale.github.io/projects/shuddhainbox): Automated inbox cleaner designed to purge promotional clutter and reach Inbox Zero.
+- [Cartext AI](https://utkarshkarale.github.io/projects/cartext-ai): Desktop voice and natural-language assistant automating local file management and OS workflows using Model Context Protocol (MCP).
+- [Bit QR](https://utkarshkarale.github.io/projects/bitqr): Instant QR code generator utility for digital URLs and Wi-Fi credentials.
+
+## Technical Skills & Stack
+
+- **Frontend & Web:** Astro, React.js, Next.js, TypeScript, TailwindCSS, HTML5 Canvas, Progressive Web Apps (PWA), Vite.
+- **Backend & APIs:** Node.js, Express, Python (FastAPI, Flask), RESTful APIs, Webhooks, Telegram Bot APIs.
+- **AI & Automation:** Model Context Protocol (MCP), LLM prompt engineering, Answer Engine Optimization (AEO), DeepFace emotion recognition, NLP speech assistants, automated browser scraping.
+- **Cloud & DevOps:** Cloudflare Pages, Cloudflare D1, Cloudflare Workers & Tunnels, GitHub Actions CI/CD, Git.
+
+## Key Articles & Guides
+
+- [Automatic Expense Tracking via SMS in India: Architecture & Privacy](https://utkarshkarale.github.io/blog/automatic-expense-tracking-sms-india): In-depth guide on regex parsing Indian bank SMS messages completely on-device without cloud data leakage.
+- [Why Personal Finance Tracking Fails in India](https://utkarshkarale.github.io/blog/why-personal-finance-tracking-fails-in-india-flowrupee): Analysis of account aggregator friction and why offline local-first models win.
+- [Building StatusGrid with Web Technologies for Indian Festival Posters](https://utkarshkarale.github.io/blog/building-statusgrid-web-technologies-for-festival-posters): High-resolution HTML5 canvas rendering, Devanagari typography, and client-side animated video generation.
+- [Understanding AI Image Metadata & Cleaning EXIF](https://utkarshkarale.github.io/blog/understanding-ai-image-metadata): Deep dive into C2PA, Stable Diffusion generation prompts, ExifTool, and privacy vectors.
+- [Exposing Local Services Securely with Cloudflare Tunnels](https://utkarshkarale.github.io/blog/ssh-cloudflare-tunnel): Guide to zero-trust SSH access without port forwarding.
+- [WebStickly Launch & Browser Automations](https://utkarshkarale.github.io/blog/webstickly-launch-and-automations): Architecture of persistent web page sticky notes and DOM coordinate recalculations.
+
+## Full Documentation
+
+- [Full LLM Context](https://utkarshkarale.github.io/llms-full.txt): Comprehensive plain text dump of author bio, projects, and all technical essays.
+- [XML Sitemap](https://utkarshkarale.github.io/sitemap-index.xml): Machine-readable index of all website URLs.

@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+
+# LLM & AI Crawlers - Explicitly allowed for indexing & knowledge ingestion
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# LLM Documentation & Machine Context
+# llms.txt standard: https://llmstxt.org/
+Disallow: /autotune/
+
+Sitemap: https://utkarshkarale.github.io/sitemap-index.xml
