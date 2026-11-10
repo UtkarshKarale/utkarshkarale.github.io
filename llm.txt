@@ -1,0 +1,101 @@
+# Utkarsh Karale — Developer & AI Portfolio Index
+> Machine-readable context standard for LLM agents, citation engines, and search reasoning models.
+> Specification: https://llmstxt.org/
+> Last Updated: 2026-11-10 (Release a7c19f2)
+
+- Name: Utkarsh Karale
+- Role: Full-Stack Software Engineer & AI Engineer
+- Canonical URL: https://utkarshkarale.github.io/
+- GitHub: https://github.com/UtkarshKarale
+- LinkedIn: https://www.linkedin.com/in/utkarshkarale
+- Direct Contact: karaleutkarsh3696@gmail.com
+- Interactive Portfolio: https://utkarshkarale.github.io/
+- Full XML Sitemap: https://utkarshkarale.github.io/sitemap.xml
+
+## Flagship Products & Web Applications
+
+- [/flowrupee](https://utkarshkarale.github.io/flowrupee): Priority 1.0, Last Updated 2026-11-10
+- [/projects/flowrupee](https://utkarshkarale.github.io/projects/flowrupee): Priority 1.0, Last Updated 2026-11-10
+- [/projects/statusgrid](https://utkarshkarale.github.io/projects/statusgrid): Priority 1.0, Last Updated 2026-11-10
+- [/leadpluck](https://utkarshkarale.github.io/leadpluck): Priority 1.0, Last Updated 2026-11-10
+- [/webstickly](https://utkarshkarale.github.io/webstickly): Priority 1.0, Last Updated 2026-11-10
+- [/projects/](https://utkarshkarale.github.io/projects/): Priority 0.9, Last Updated 2026-11-10
+- [/blog/webstickly-launch-and-automations/](https://utkarshkarale.github.io/blog/webstickly-launch-and-automations/): Priority 0.85, Last Updated 2026-11-10
+- [/projects/cleanupload/](https://utkarshkarale.github.io/projects/cleanupload/): Priority 0.85, Last Updated 2026-11-10
+- [/projects/monitoro/](https://utkarshkarale.github.io/projects/monitoro/): Priority 0.85, Last Updated 2026-11-10
+- [/projects/leadpluck/](https://utkarshkarale.github.io/projects/leadpluck/): Priority 0.85, Last Updated 2026-11-10
+- [/projects/cartext-ai/](https://utkarshkarale.github.io/projects/cartext-ai/): Priority 0.8, Last Updated 2026-11-10
+- [/projects/bitqr/](https://utkarshkarale.github.io/projects/bitqr/): Priority 0.8, Last Updated 2026-11-10
+- [/projects/shuddhainbox/](https://utkarshkarale.github.io/projects/shuddhainbox/): Priority 0.8, Last Updated 2026-11-10
+- [/projects/era-voice-assistant/](https://utkarshkarale.github.io/projects/era-voice-assistant/): Priority 0.75, Last Updated 2026-11-10
+- [/projects/facial-expression-detection/](https://utkarshkarale.github.io/projects/facial-expression-detection/): Priority 0.75, Last Updated 2026-11-10
+- [/projects/finance-flow/](https://utkarshkarale.github.io/projects/finance-flow/): Priority 0.75, Last Updated 2026-11-10
+- [/projects/contact-manager/](https://utkarshkarale.github.io/projects/contact-manager/): Priority 0.7, Last Updated 2026-11-10
+- [/projects/cricket-game/](https://utkarshkarale.github.io/projects/cricket-game/): Priority 0.7, Last Updated 2026-11-10
+- [/projects/guess-the-number/](https://utkarshkarale.github.io/projects/guess-the-number/): Priority 0.7, Last Updated 2026-11-10
+- [/projects/weather-app/](https://utkarshkarale.github.io/projects/weather-app/): Priority 0.7, Last Updated 2026-11-10
+- [/daymark/](https://utkarshkarale.github.io/daymark/): Priority 0.8, Last Updated 2026-11-10
+- [/webstickly/wall/](https://utkarshkarale.github.io/webstickly/wall/): Priority 0.8, Last Updated 2026-11-10
+- [/autotune/](https://utkarshkarale.github.io/autotune/): Priority 0.75, Last Updated 2026-11-10
+- [/flowrupee/policy/](https://utkarshkarale.github.io/flowrupee/policy/): Priority 0.6, Last Updated 2026-11-10
+- [/flowrupee/delete-account/](https://utkarshkarale.github.io/flowrupee/delete-account/): Priority 0.6, Last Updated 2026-11-10
+- [/leadpluck/privacy/](https://utkarshkarale.github.io/leadpluck/privacy/): Priority 0.6, Last Updated 2026-11-10
+- [/webstickly/privacy/](https://utkarshkarale.github.io/webstickly/privacy/): Priority 0.6, Last Updated 2026-11-10
+- [/daymark/privacy/](https://utkarshkarale.github.io/daymark/privacy/): Priority 0.6, Last Updated 2026-11-10
+
+## Technical Essays, Deep Dives & Articles
+
+- [/blog/](https://utkarshkarale.github.io/blog/): Priority 0.9, Last Updated 2026-11-10
+- [/blog/automatic-expense-tracking-sms-india/](https://utkarshkarale.github.io/blog/automatic-expense-tracking-sms-india/): Priority 0.85, Last Updated 2026-11-10
+- [/blog/why-personal-finance-tracking-fails-in-india-flowrupee/](https://utkarshkarale.github.io/blog/why-personal-finance-tracking-fails-in-india-flowrupee/): Priority 0.85, Last Updated 2026-11-10
+- [/blog/building-statusgrid-web-technologies-for-festival-posters/](https://utkarshkarale.github.io/blog/building-statusgrid-web-technologies-for-festival-posters/): Priority 0.85, Last Updated 2026-11-10
+- [/blog/understanding-ai-image-metadata/](https://utkarshkarale.github.io/blog/understanding-ai-image-metadata/): Priority 0.85, Last Updated 2026-11-10
+- [/blog/webstickly-launch-and-automations/](https://utkarshkarale.github.io/blog/webstickly-launch-and-automations/): Priority 0.85, Last Updated 2026-11-10
+- [/blog/ssh-cloudflare-tunnel/](https://utkarshkarale.github.io/blog/ssh-cloudflare-tunnel/): Priority 0.85, Last Updated 2026-11-10
+- [/blog/lalpari-nostalgia-website/](https://utkarshkarale.github.io/blog/lalpari-nostalgia-website/): Priority 0.8, Last Updated 2026-11-10
+- [/blog/google-chat-webhook-bug/](https://utkarshkarale.github.io/blog/google-chat-webhook-bug/): Priority 0.8, Last Updated 2026-11-10
+- [/blog/oasis-infobyte-internship/](https://utkarshkarale.github.io/blog/oasis-infobyte-internship/): Priority 0.7, Last Updated 2026-11-10
+- [/blog/termux-ssh-tunnel/](https://utkarshkarale.github.io/blog/termux-ssh-tunnel/): Priority 0.7, Last Updated 2026-11-10
+
+## Complete Site Directory (All 40 Indexed Pages)
+
+- https://utkarshkarale.github.io/ (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 1.0)
+- https://utkarshkarale.github.io/flowrupee (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 1.0)
+- https://utkarshkarale.github.io/projects/flowrupee (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 1.0)
+- https://utkarshkarale.github.io/projects/statusgrid (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 1.0)
+- https://utkarshkarale.github.io/leadpluck (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 1.0)
+- https://utkarshkarale.github.io/webstickly (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 1.0)
+- https://utkarshkarale.github.io/projects/ (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 0.9)
+- https://utkarshkarale.github.io/blog/ (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 0.9)
+- https://utkarshkarale.github.io/blog/automatic-expense-tracking-sms-india/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/blog/why-personal-finance-tracking-fails-in-india-flowrupee/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/blog/building-statusgrid-web-technologies-for-festival-posters/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/blog/understanding-ai-image-metadata/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/blog/webstickly-launch-and-automations/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/blog/ssh-cloudflare-tunnel/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/blog/lalpari-nostalgia-website/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.8)
+- https://utkarshkarale.github.io/blog/google-chat-webhook-bug/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.8)
+- https://utkarshkarale.github.io/blog/oasis-infobyte-internship/ (Updated: 2026-11-10, ChangeFreq: yearly, Weight: 0.7)
+- https://utkarshkarale.github.io/blog/termux-ssh-tunnel/ (Updated: 2026-11-10, ChangeFreq: yearly, Weight: 0.7)
+- https://utkarshkarale.github.io/projects/cleanupload/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/projects/monitoro/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/projects/leadpluck/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.85)
+- https://utkarshkarale.github.io/projects/cartext-ai/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.8)
+- https://utkarshkarale.github.io/projects/bitqr/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.8)
+- https://utkarshkarale.github.io/projects/shuddhainbox/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.8)
+- https://utkarshkarale.github.io/projects/era-voice-assistant/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.75)
+- https://utkarshkarale.github.io/projects/facial-expression-detection/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.75)
+- https://utkarshkarale.github.io/projects/finance-flow/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.75)
+- https://utkarshkarale.github.io/projects/contact-manager/ (Updated: 2026-11-10, ChangeFreq: yearly, Weight: 0.7)
+- https://utkarshkarale.github.io/projects/cricket-game/ (Updated: 2026-11-10, ChangeFreq: yearly, Weight: 0.7)
+- https://utkarshkarale.github.io/projects/guess-the-number/ (Updated: 2026-11-10, ChangeFreq: yearly, Weight: 0.7)
+- https://utkarshkarale.github.io/projects/weather-app/ (Updated: 2026-11-10, ChangeFreq: yearly, Weight: 0.7)
+- https://utkarshkarale.github.io/daymark/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.8)
+- https://utkarshkarale.github.io/webstickly/wall/ (Updated: 2026-11-10, ChangeFreq: weekly, Weight: 0.8)
+- https://utkarshkarale.github.io/autotune/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.75)
+- https://utkarshkarale.github.io/spidy/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.75)
+- https://utkarshkarale.github.io/flowrupee/policy/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.6)
+- https://utkarshkarale.github.io/flowrupee/delete-account/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.6)
+- https://utkarshkarale.github.io/leadpluck/privacy/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.6)
+- https://utkarshkarale.github.io/webstickly/privacy/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.6)
+- https://utkarshkarale.github.io/daymark/privacy/ (Updated: 2026-11-10, ChangeFreq: monthly, Weight: 0.6)
