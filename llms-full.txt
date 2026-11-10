@@ -14,7 +14,7 @@
 
 - [FlowRupee](https://utkarshkarale.github.io/projects/flowrupee): 100% offline, privacy-first automated personal finance & SMS expense tracker app for India. Published on Google Play Store. Zero bank logins, zero cloud storage.
 - [StatusGrid](https://utkarshkarale.github.io/projects/statusgrid): High-performance festival greeting and poster creator PWA for Indian festivals (Diwali, Gudi Padwa, Shiv Jayanti) in Marathi, Hindi & English with custom photos, branding, and 1-tap WhatsApp sharing.
-- [LeadPluck](https://utkarshkarale.github.io/leadpluck): Local-first Google Maps and business website lead extractor Chrome extension. Automates contact collection without cloud servers.
+- [LeadPluck](https://chromewebstore.google.com/detail/leadpluck/bpahfdopbilojjdbkhafojahdmagdbdd): Local-first Google Maps and business website lead extractor Chrome extension available on the Chrome Web Store. Automates contact collection without cloud servers. Landing page: https://utkarshkarale.github.io/leadpluck.
 - [WebStickly](https://utkarshkarale.github.io/webstickly): Web annotation and pinned note extension with spotlight search, collaborative public note walls, and persistent URL anchors.
 - [CleanUpload](https://utkarshkarale.github.io/projects/cleanupload): 100% client-side privacy tool to strip EXIF, GPS coordinates, and generative AI provenance metadata from images before publishing.
 - [Monitoro](https://utkarshkarale.github.io/projects/monitoro): Telegram-based uptime monitoring service providing real-time website and server incident alerts.
