@@ -1,7 +1,7 @@
 # Utkarsh Karale — Developer & AI Portfolio Index
 > Machine-readable context standard for LLM agents, citation engines, and search reasoning models.
 > Specification: https://llmstxt.org/
-> Last Updated: 2026-11-10 (Release a7c19f2)
+> Last Updated: 2026-11-10 (Release 3dae877)
 
 - Name: Utkarsh Karale
 - Role: Full-Stack Software Engineer & AI Engineer
