@@ -1,7 +1,7 @@
 # Utkarsh Karale — Developer & AI Portfolio Index
 > Machine-readable context standard for LLM agents, citation engines, and search reasoning models.
 > Specification: https://llmstxt.org/
-> Last Updated: 2026-11-13 (Release 1116043)
+> Last Updated: 2026-11-13 (Release 454c5d5)
 
 - Name: Utkarsh Karale
 - Role: Full-Stack Software Engineer & AI Engineer
@@ -61,6 +61,9 @@
 
 - https://utkarshkarale.github.io/ (Updated: 2026-11-13, ChangeFreq: weekly, Weight: 1.0)
 - https://utkarshkarale.github.io/flowrupee (Updated: 2026-11-13, ChangeFreq: weekly, Weight: 1.0)
+- https://utkarshkarale.github.io/statusgrid (Updated: 2026-11-13, ChangeFreq: weekly, Weight: 1.0)
+- https://utkarshkarale.github.io/statusgrid/privacy (Updated: 2026-11-13, ChangeFreq: monthly, Weight: 0.9)
+- https://utkarshkarale.github.io/statusgrid/terms (Updated: 2026-11-13, ChangeFreq: monthly, Weight: 0.8)
 - https://utkarshkarale.github.io/projects/flowrupee (Updated: 2026-11-13, ChangeFreq: weekly, Weight: 1.0)
 - https://utkarshkarale.github.io/projects/statusgrid (Updated: 2026-11-13, ChangeFreq: weekly, Weight: 1.0)
 - https://utkarshkarale.github.io/leadpluck (Updated: 2026-11-13, ChangeFreq: weekly, Weight: 1.0)
