@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "online.jiapp.flowrupee",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:DE:83:E0:B2:D6:FC:86:71:0D:37:A6:4E:99:A8:1F:B1:0E:CF:45:C9:EB:19:D8:1A:64:B4:F6:AB:40"
+      ]
+    }
+  }
+]
